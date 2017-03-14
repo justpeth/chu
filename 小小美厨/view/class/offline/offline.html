@@ -1,0 +1,15 @@
+<ion-view view-title="线下课" hide-nav-bar="true">
+    <ion-content>
+        <ion-list ng-repeat="pro in off">
+            <ion-item class="item-image img">
+                <img ng-src="images/{{pro.imgsrc}}" ui-sref="tabs.product">
+            </ion-item>
+            <ion-item class="offline">
+                <h5>{{pro.title}}</h5>
+                <p>{{pro.address}}</p>
+                <span class="nowprice">学费：{{pro.price}}   {{pro.nowprice}}</span>
+                <span class="oldprice">{{pro.oldprice}}</span>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

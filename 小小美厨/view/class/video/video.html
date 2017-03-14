@@ -1,0 +1,17 @@
+<ion-view view-title="视频课" hide-nav-bar="true">
+    <ion-content>
+        <ion-list class="video" ng-repeat="pro in vid">
+            <ion-item class="item-avatar-left">
+                <img ng-src="images/{{pro.head}}">
+                <h2>{{pro.name}}</h2>
+            </ion-item>
+            <ion-item class="item-image">
+                <img ng-src="images/{{pro.imgsrc}}" ui-sref="tabs.product">
+            </ion-item>
+            <ion-item>
+                <h5>{{pro.title}}</h5>
+                <span>学费：{{pro.price}}</span>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

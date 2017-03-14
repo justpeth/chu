@@ -1,0 +1,78 @@
+/**
+ * Created by 喵喵静 on 2017/2/3.
+ */
+angular.module('myApp').controller('menuCtrl',function($scope){
+    $scope.hot=[
+        {"imgsrc":"hot_08.jpg"},
+        {"imgsrc":"hot_10.jpg"},
+        {"imgsrc":"hot_13.jpg"},
+        {"imgsrc":"hot_15.jpg"}
+    ];
+    $scope.yrsc=[
+        {"imgsrc":"hot_21.jpg"},
+        {"imgsrc":"hot_22.jpg"},
+        {"imgsrc":"hot_23.jpg"},
+        {"imgsrc":"hot_24.jpg"},
+        {"imgsrc":"hot_29.jpg"},
+        {"imgsrc":"hot_30.jpg"},
+        {"imgsrc":"hot_31.jpg"}
+    ];
+    $scope.zsxc=[
+        {"imgsrc":"maa_03.jpg"},
+        {"imgsrc":"maa_05.jpg"},
+        {"imgsrc":"maa_07.jpg"},
+        {"imgsrc":"maa_09.jpg"},
+        {"imgsrc":"maa_15.jpg"},
+        {"imgsrc":"maa_16.jpg"},
+        {"imgsrc":"maa_17.jpg"},
+        {"imgsrc":"maa_18.jpg"},
+        {"imgsrc":"maa_23.jpg"},
+        {"imgsrc":"maa_24.jpg"},
+        {"imgsrc":"maa_25.jpg"},
+        {"imgsrc":"maa_26.jpg"},
+        {"imgsrc":"maa_32.jpg"},
+        {"imgsrc":"maa_33.jpg"},
+        {"imgsrc":"maa_34.jpg"}
+
+    ];
+    $scope.yysp=[
+        {"imgsrc":"mia_03.jpg"},
+        {"imgsrc":"mia_05.jpg"},
+        {"imgsrc":"mia_07.jpg"},
+        {"imgsrc":"mia_09.jpg"},
+        {"imgsrc":"mia_15.jpg"},
+        {"imgsrc":"mia_16.jpg"},
+        {"imgsrc":"mia_17.jpg"},
+        {"imgsrc":"mia_19.jpg"}
+    ];
+    $scope.yhyq=[
+        {"imgsrc":"mia_25.jpg"},
+        {"imgsrc":"mia_26.jpg"},
+        {"imgsrc":"mia_27.jpg"},
+        {"imgsrc":"mia_28.jpg"},
+        {"imgsrc":"mia_33.jpg"}
+    ];
+    $scope.jccp=[
+        {"imgsrc":"mian_03.jpg"},
+        {"imgsrc":"mian_05.jpg"},
+        {"imgsrc":"mian_07.jpg"},
+        {"imgsrc":"mian_09.jpg"},
+
+    ];
+    $scope.sjc=[
+        {"imgsrc":"mian_17.jpg"},
+        {"imgsrc":"mian_18.jpg"},
+        {"imgsrc":"mian_23.jpg"},
+        {"imgsrc":"mian_24.jpg"},
+        {"imgsrc":"mian_25.jpg"},
+        {"imgsrc":"mian_26.jpg"}
+    ];
+    $scope.hptd=[
+        {"imgsrc":"mian_31.jpg"},
+        {"imgsrc":"mian_32.jpg"},
+        {"imgsrc":"mian_33.jpg"},
+        {"imgsrc":"mian_34.jpg"}
+    ];
+
+
+})

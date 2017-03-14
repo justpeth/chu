@@ -1,0 +1,14 @@
+<ion-view hide-nav-bar="true">
+    <div class="bar bar-header">
+        <button class="button button-icon ion-ios-arrow-left back" ui-sref="tabs.home"></button>
+        <h2 class="title">活动</h2>
+    </div>
+    <ion-content class="has-header">
+        <ion-list>
+            <ion-item class="act_a" ng-repeat="pro in active">
+                <img ng-src="images/{{pro.imgsrc}}">
+                <p>{{pro.title}}</p>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

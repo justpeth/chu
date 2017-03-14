@@ -1,0 +1,18 @@
+<ion-view hide-nav-bar="true">
+    <div class="bar bar-header">
+        <button class="button button-icon ion-ios-arrow-left back" ui-sref="tabs.home"></button>
+        <h2 class="title">视频菜谱</h2>
+    </div>
+    <ion-content class="has-header">
+        <ion-list>
+            <ion-item class="vie" ng-repeat="pro in stvideo">
+                <img ng-src="images/{{pro.imgsrc}}">
+                <h2>{{pro.title}}</h2>
+                <span>
+                    <i class="icon ion-thumbsup"></i>149
+                    <i class="icon ion-ios-star"></i>471
+                </span>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

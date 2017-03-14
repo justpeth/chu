@@ -1,0 +1,14 @@
+<ion-view hide-nav-bar="true">
+    <ion-content class="recommend">
+        <h2>网厨达人推荐</h2>
+        <p>挑选你中意的达人，玩转社区</p>
+        <ul>
+            <li ng-repeat="pro in touch">
+                <img ng-src="images/{{pro.imgsrc}}">
+                <span>{{pro.title}}</span>
+                <i>√</i>
+            </li>
+        </ul>
+        <button class="button button-energized button-full" ui-sref="tabs.touch"><a href=""></a>进入社区</button>
+    </ion-content>
+</ion-view>

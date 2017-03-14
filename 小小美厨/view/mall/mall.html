@@ -1,0 +1,128 @@
+<ion-view hide-nav-bar="true">
+    <ion-content class="shopbg">
+        <ion-slide-box does-continue="true" slide-interval="2500" auto-play="true">
+            <ion-slide>
+                <div class="banbox"><a href="#"><img src="images/inde_02.jpg"></a></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="banbox"><a href="#"><img src="images/index06.png"></a></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="banbox"><a href="#"><img src="images/index02.png"></a></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="banbox"><a href="#"><img src="images/index03.png"></a></div>
+            </ion-slide>
+            <ion-slide>
+                <div class="banbox"><a href="#"><img src="images/index04.png"></a></div>
+            </ion-slide>
+        </ion-slide-box>
+        <ion-list>
+            <ion-item class="seachP">
+                    <i class="icon ion-search placeholder-icon fdj"></i>
+                    <input type="search" placeholder="搜素商品">
+                </label>
+            </ion-item>
+        </ion-list>
+        <ion-item class="tabsul">
+            <ul class="tabs row">
+                <li class="tab-item ">
+                    <img src="images/shop_03.jpg">
+                    <h5>达人手作</h5>
+                </li>
+                <li class="tab-item">
+                    <img src="images/shop_05.jpg">
+                    <h5>地方特产</h5>
+                </li>
+                <li class="tab-item">
+                    <img src="images/shop_07.jpg">
+                    <h5>小吃零食</h5>
+                </li>
+                <li class="tab-item">
+                    <img src="images/shop_09.jpg">
+                    <h5>果蔬禽肉</h5>
+                </li>
+            </ul>
+        </ion-item>
+
+        <ion-item class="tabsul">
+            <ul class="tabs row">
+                <li class="tab-item ">
+                    <img src="images/shop_15.jpg">
+                    <h5>进口专区</h5>
+                </li>
+                <li class="tab-item">
+                    <img src="images/shop_16.jpg">
+                    <h5>食材调料</h5>
+                </li>
+                <li class="tab-item">
+                    <img src="images/shop_17.jpg">
+                    <h5>酒水饮品</h5>
+                </li>
+                <li class="tab-item">
+                    <img src="images/shop_18.jpg">
+                    <h5>厨房器具</h5>
+                </li>
+            </ul>
+        </ion-item>
+        <h2>特价好物</h2>
+        <div ng-repeat="product in products.sale" class="product row" ng-if="$index % 2 == 0">
+            <ion-item class="card" ng-repeat="i in [$index,$index + 1]" ng-if="products.sale[i] != null">
+                <div class="pic"><img ng-src="images/{{products.sale[i].imgsrc}}"></div>
+                <h5>{{products.sale[i].title}}</h5>
+                <span>{{products.sale[i].oldprice}}</span>
+                <p>{{products.sale[i].price}}</p>
+            </ion-item>
+        </div>
+        <ion-item class="bann"><img src="images/ban_02.jpg"></ion-item>
+        <h2>厨选达人手作</h2>
+        <div ng-repeat="product in products.special" class="product row" ng-if="$index % 2 == 0">
+            <ion-item class="card" ng-repeat="i in [$index,$index + 1]" ng-if="products.special[i] != null">
+                <div class="pic"><img ng-src="images/{{products.special[i].imgsrc}}"></div>
+                <h5>{{products.special[i].title}}</h5>
+                <span>{{products.special[i].oldprice}}</span>
+                <p>{{products.special[i].price}}</p>
+            </ion-item>
+        </div>
+        <ion-item class="bann"><img src="images/banna_02.jpg"></ion-item>
+        <h2>厨选进口专区</h2>
+        <div ng-repeat="product in products.sale" class="product row" ng-if="$index % 2 == 0">
+            <ion-item class="card" ng-repeat="i in [$index,$index + 1]" ng-if="products.sale[i] != null">
+                <div class="pic"><img ng-src="images/{{products.sale[i].imgsrc}}"></div>
+                <h5>{{products.sale[i].title}}</h5>
+                <span>{{products.sale[i].oldprice}}</span>
+                <p>{{products.sale[i].price}}</p>
+            </ion-item>
+        </div>
+        <ion-item class="bann"><img src="images/ban_02.jpg"></ion-item>
+        <h2>厨选酒水饮品</h2>
+        <div ng-repeat="product in products.special" class="product row" ng-if="$index % 2 == 0">
+            <ion-item class="card" ng-repeat="i in [$index,$index + 1]" ng-if="products.special[i] != null">
+                <div class="pic"><img ng-src="images/{{products.special[i].imgsrc}}"></div>
+                <h5>{{products.special[i].title}}</h5>
+                <span>{{products.special[i].oldprice}}</span>
+                <p>{{products.special[i].price}}</p>
+            </ion-item>
+        </div>
+        <ion-item class="bann"><img src="images/banna_02.jpg"></ion-item>
+        <h2>厨选食材调料</h2>
+        <div ng-repeat="product in products.sale" class="product row" ng-if="$index % 2 == 0">
+            <ion-item class="card" ng-repeat="i in [$index,$index + 1]" ng-if="products.sale[i] != null">
+                <div class="pic"><img ng-src="images/{{products.sale[i].imgsrc}}"></div>
+                <h5>{{products.sale[i].title}}</h5>
+                <span>{{products.sale[i].oldprice}}</span>
+                <p>{{products.sale[i].price}}</p>
+            </ion-item>
+        </div>
+        <ion-item class="bann"><img src="images/ban_02.jpg"></ion-item>
+        <h2>厨选厨房器具</h2>
+        <div ng-repeat="product in products.special" class="product row" ng-if="$index % 2 == 0">
+            <ion-item class="card" ng-repeat="i in [$index,$index + 1]" ng-if="products.special[i] != null">
+                <div class="pic"><img ng-src="images/{{products.special[i].imgsrc}}"></div>
+                <h5>{{products.special[i].title}}</h5>
+                <span>{{products.special[i].oldprice}}</span>
+                <p>{{products.special[i].price}}</p>
+            </ion-item>
+        </div>
+    </ion-content>
+</ion-view>

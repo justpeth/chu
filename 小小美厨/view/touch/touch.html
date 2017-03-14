@@ -1,0 +1,38 @@
+<ion-view  hide-nav-bar="true">
+    <ion-content>
+        <ion-slide-box does-continue="true" slide-interval="2500" auto-play="true">
+            <ion-slide>
+                <div class="banbox"><a href="#"><img ng-src="images/touch_02.jpg"></a> </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="banbox"><a href="#"><img ng-src="images/touch_04.jpg"></a> </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="banbox"><a href="#"><img ng-src="images/touch_06.jpg"></a> </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="banbox"><a href="#"><img ng-src="images/touch_08.jpg"></a> </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="banbox"><a href="#"><img ng-src="images/touch_10.jpg"></a> </div>
+            </ion-slide>
+        </ion-slide-box>
+        <ion-list ng-repeat="pro in commu">
+            <ion-item class="comm item-avatar">
+                <img ng-src="images/{{pro.head}}">
+                <h5>{{pro.title}}</h5>
+                <span>{{pro.time}}</span>
+                <i>+ 关注</i>
+            </ion-item>
+            <ion-item class="cont">
+                <p>{{pro.content}}</p>
+                <div class="pic"><img ng-src="images/{{pro.imgsrc}}"></div>
+                <div class="share"><i class="icon ion-android-open"></i></div>
+                <div class="zan">
+                    <i class="icon ion-android-favorite-outline"></i>
+                    <i class="icon ion-ios-chatbubble-outline"></i>
+                </div>
+            </ion-item>
+        </ion-list>
+    </ion-content>
+</ion-view>

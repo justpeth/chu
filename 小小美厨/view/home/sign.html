@@ -1,0 +1,36 @@
+<ion-view hide-nav-bar="true">
+    <div class="bar bar-header">
+        <button class="button button-icon ion-ios-arrow-left back" ui-sref="tabs.home"></button>
+        <h2 class="title">签到</h2>
+    </div>
+    <ion-content class="has-header qiand">
+        <img src="images/qiand.png">
+        <ion-list>
+            <ion-item class="bannar">
+                <ion-slide-box on-slide-changed="onSlideChanged(index)" pager-click="pagerClick(index)" does-continue="true"  slide-interval="2500" auto-play="true" >
+                    <ion-slide ui-sref="tabs.product">
+                        <div class="banbox"><a href="#"><img src="images/bana.jpg"></a></div>
+                    </ion-slide>
+                    <ion-slide ui-sref="tabs.product">
+                        <div class="banbox"><a href="#"><img src="images/bana2.jpg"></a></div>
+                    </ion-slide>
+                    <ion-slide ui-sref="tabs.product">
+                        <div class="banbox"><a href="#"><img src="images/bana4.jpg"></a></div>
+                    </ion-slide>
+                    <ion-slide>
+                        <div class="banbox"><a href="#"><img src="images/bana5.jpg"></a></div>
+                    </ion-slide>
+                </ion-slide-box>
+            </ion-item>
+            <h2>— 今日厨抢购 —</h2>
+            <div ng-repeat="product in products.sale" class="product row" ng-if="$index % 2 == 0">
+                <ion-item class="card" ng-repeat="i in [$index,$index + 1]" ng-if="products.sale[i] != null">
+                    <div class="pic"><img ng-src="images/{{products.sale[i].imgsrc}}"></div>
+                    <h5>{{products.sale[i].title}}</h5>
+                    <span>{{products.sale[i].oldprice}}</span>
+                    <p>{{products.sale[i].price}}</p>
+                </ion-item>
+            </div>
+        </ion-list>
+    </ion-content>
+</ion-view>

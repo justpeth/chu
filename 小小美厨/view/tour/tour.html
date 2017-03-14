@@ -1,0 +1,16 @@
+<ion-view hide-nav-bar="true" id="tour-view">
+    <ion-slide-box show-pager="true" on-slide-changed="onSlideChanged()">
+        <ion-slide class="tourImg">
+            <img src="images/ydy1.jpg">
+        </ion-slide>
+        <ion-slide class="tourImg">
+            <img src="images/ydy2.jpg">
+        </ion-slide>
+        <ion-slide class="tourImg">
+            <img src="images/ydy3.jpg">
+        </ion-slide>
+        <ion-slide class="tourImg">
+            <img src="images/ydy4.jpg" ui-sref="tabs.home" ng-if="isShow">
+        </ion-slide>
+    </ion-slide-box>
+</ion-view>

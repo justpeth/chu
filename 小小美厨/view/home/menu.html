@@ -1,0 +1,62 @@
+<ion-view hide-nav-bar="true">
+    <div class="bar bar-header">
+        <i class="button button-icon ion-ios-arrow-left" ui-sref="tabs.home"></i>
+        <h2 class="title">菜谱</h2>
+    </div>
+    <ion-content class=" has-header">
+        <ion-list>
+            <ion-item class="menu_head">
+                <img src="images/hot_02.jpg">
+                <img src="images/hot_04.jpg">
+            </ion-item>
+        </ion-list>
+        <ion-list class="hot_list">
+            <h2>热门分类</h2>
+            <ul>
+                <li ng-repeat="pro in hot"><img ng-src="images/{{pro.imgsrc}}"> </li>
+            </ul>
+        </ion-list>
+        <ion-list class="hot_list">
+            <h2>一日三餐</h2>
+            <ul>
+                <li ng-repeat="pro in yrsc"><img ng-src="images/{{pro.imgsrc}}"> </li>
+            </ul>
+        </ion-list>
+        <ion-list class="hot_list">
+            <h2>主食小吃</h2>
+            <ul>
+                <li ng-repeat="pro in zsxc"><img ng-src="images/{{pro.imgsrc}}"> </li>
+            </ul>
+        </ion-list>
+        <ion-list class="hot_list">
+            <h2>孕婴食谱</h2>
+            <ul>
+                <li ng-repeat="pro in yysp"><img ng-src="images/{{pro.imgsrc}}"> </li>
+            </ul>
+        </ion-list>
+        <ion-list class="hot_list">
+            <h2>宴会宴请</h2>
+            <ul>
+                <li ng-repeat="pro in yhyq"><img ng-src="images/{{pro.imgsrc}}"> </li>
+            </ul>
+        </ion-list>
+        <ion-list class="hot_list">
+            <h2>家常菜谱</h2>
+            <ul>
+                <li ng-repeat="pro in jccp"><img ng-src="images/{{pro.imgsrc}}"> </li>
+            </ul>
+        </ion-list>
+        <ion-list class="hot_list">
+            <h2>时令菜</h2>
+            <ul>
+                <li ng-repeat="pro in sjc"><img ng-src="images/{{pro.imgsrc}}"> </li>
+            </ul>
+        </ion-list>
+        <ion-list class="hot_list">
+            <h2>烘培甜点</h2>
+            <ul>
+                <li ng-repeat="pro in hptd"><img ng-src="images/{{pro.imgsrc}}"> </li>
+            </ul>
+        </ion-list>
+    </ion-content>
+</ion-view>
